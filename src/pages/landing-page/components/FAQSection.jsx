@@ -88,13 +88,13 @@ const FAQSection = () => {
   const shareOnWhatsApp = (acc) => {
     const details = acc.details[0];
     const message = `
-    🏦 *${acc.name} Bank Details*
+🏦 *${acc.name} Bank Details*
 
-    Bank Name: ${details.bank_name}
-    Account Holder: ${details.account_holder_name}
-    Account Number: ${details.account_number}
-    IFSC Code: ${details.ifsc_code}
-    Account Type: ${details.account_type}
+Bank Name: ${details.bank_name}
+Account Holder: ${details.account_holder_name}
+Account Number: ${details.account_number}
+IFSC Code: ${details.ifsc_code}
+Account Type: ${details.account_type}
     `;
     const encoded = encodeURIComponent(message);
     const url = `https://wa.me/?text=${encoded}`;
